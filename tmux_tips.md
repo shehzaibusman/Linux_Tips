@@ -42,7 +42,7 @@ p | move to previous window |
 Spacebar | Switch between layouts |
 arrow keys | move through panes | holding down ctrl while using ctrl+b prefix and using arrow keys resizes panes
 \[ |  enables scrolling | 
-:setw synchronize-panes | sends keyboard input to all open windows |
+:setw synchronize-panes | syncronizes keyboard input to all open panes |
 
 
 
@@ -101,6 +101,9 @@ starttmux $*
 
 tmux attach
 ```
+| :point_up:     Uncommenting tmux set-window-option synchronize-panes on >/dev/null will syncronize keyboard input to all panes once opened  |
+|-----------------------------------------|
+
 Then call it by typing:
 ```
 xmux host1 host2 host3 etc.  
