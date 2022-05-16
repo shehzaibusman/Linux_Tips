@@ -3,7 +3,50 @@
 Link:  [TMUX Github](https://github.com/tmux/tmux/wiki)
 | [Command Cheat Sheet](https://tmuxcheatsheet.com/)
 
-Tmux is a terminal multiplexer that can minipulate the terminal in ways to increase productivity by opening up multiple isolated terminals of the same session.
+Tmux is a terminal multiplexer that can minipulate the terminal in ways to increase productivity by opening up multiple isolated panes of the same session.
+
+### :smirk:	Tmux Commands
+
+Start a new session
+```
+tmux
+OR
+tmux new -s SessionName
+```
+
+List sessions
+```
+tmux ls
+```
+
+Attach to session
+```
+tmux a
+OR
+tmux a -t SessionName
+```
+
+When inside a tmux session, use prefix ctrl+b followed by the following to navigate through tmux. 
+
+Key | Description | Notes
+------------ | ------------- | -------------
+d | detach from session | can be used for log running queries
+x | kill pane | can also use ctrl+d
+" | creates horizontal pane |
+% | creates vertical pane |
+q | show pane numbers | 
+z | zoom inside pane | for full screen view to that pane
+c | creates new window |
+n | move to next window |
+p | move to previous window |
+Spacebar | Switch between layouts |
+arrow keys | move through panes | holding down ctrl while using ctrl+b prefix and using arrow keys resizes panes
+\[ |  enables scrolling | 
+:setw synchronize-panes | sends keyboard input to all open windows |
+
+
+
+
 <hr>
 
 ### :smirk:	xmux: A script to automatically launch multiple windows.
@@ -64,26 +107,3 @@ xmux host1 host2 host3 etc.
 ```
 <hr>
 
-### :smirk:	Tmux Commands
-
-Start a new session
-```
-tmux
-OR
-tmux new -s SessionName
-```
-
-When inside a tmux session, use prefix ctrl+b followed by the following to navigate through tmux. 
-
-Key | Description | Notes
------------- | ------------- | -------------
-d | detach from session | can be used for log running queries
-arrow keys | move through panes | 
-:setw synchronize-panes | sends keyboard input to all open windows |
-
-
-
-Detach from session Keys:
-```
-Ctrl + b, d
-```
