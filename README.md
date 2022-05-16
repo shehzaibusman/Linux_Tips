@@ -72,7 +72,7 @@ echo "Toto, I've a feeling we're not in Kansas anymore" | awk '{print "Dorthy ha
 Result:  Dorthy has a feeling that she is not in Kansas anymore
 ```
 
-Change default delimitor from space to comma with -F flag (for csv files)
+Change default delimiter from space to comma with -F flag (for csv files)
 ```
 echo apple,ball,cat,dog,elephant,fox,grape,hide,india | awk -F, '{print $2,$7}'
 Result:  ball grape
