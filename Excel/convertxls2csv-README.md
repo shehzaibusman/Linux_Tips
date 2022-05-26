@@ -1,6 +1,6 @@
 convertxls2csv converts an excel doc in xls format to csv format.
 
-Useage:
+Usage:
     
     convertxls2csv -fw <TabName> -c <OutputFileToCreate>.csv -x <INPUTFILE>.xls
 
