@@ -13,18 +13,17 @@
 https://superuser.com/questions/434210/how-to-copy-files-between-two-open-ssh-shells\
 <br>Copy file(s) to destinations without server communication
 
-```
-Source:  tar -cz <filestocopy> | base64
-Destination: base64 -d | tar -xzv
-# Then Paste, and hit enter, then control+d 
-```
+
+    Source:  tar -cz <filestocopy> | base64
+    Destination: base64 -d | tar -xzv
+    # Then Paste, and hit enter, then control+d 
+
 
 <details><summary>Alias</summary>
 
-```
-alias base="echo 'tar -cz <filestocopy> | base64'
-            echo 'base64 -d | tar -xzv'"
-```
+    alias base="echo 'tar -cz <filestocopy> | base64'
+                echo 'base64 -d | tar -xzv'"
+
   
 </details>  
 <hr>
@@ -32,48 +31,49 @@ alias base="echo 'tar -cz <filestocopy> | base64'
 ### :grinning:	Grep IP IP addresses
 Input values or files and pipe it to the following to find IP addresses
   
-```
-grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
-```
+
+    grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+    
 <details><summary>Alias</summary>
   
-```
-alias grepip="grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
-```
+
+    alias grepip="grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
+    
 </details>  
 <hr>
 
 ### :grinning:	Sort IP Addresses
 Input IP addresses and pipe it to the following to sort IP addresses
   
-```
-sort -nt. -k 1,1 -k 2,2 -k 3,3 -k 4,4
-```
+
+    sort -nt. -k 1,1 -k 2,2 -k 3,3 -k 4,4
+  
 <details><summary>Alias</summary>
   
-```
-alias ipsort='sort -nt. -k 1,1 -k 2,2 -k 3,3 -k 4,4'
-```
+
+    alias ipsort='sort -nt. -k 1,1 -k 2,2 -k 3,3 -k 4,4'
+
 </details>  
+
 <hr>
   
 ### :grinning:	AWK command to manipulate output
 Awk delimits using spaces by default
 
 Print 4th & 8th item from input
-```
-echo "Toto, I've a feeling we're not in Kansas anymore" | awk '{print $4,$8}'
-Result:  feeling Kansas
-```
+
+    echo "Toto, I've a feeling we're not in Kansas anymore" | awk '{print $4,$8}'
+    Result:  feeling Kansas
+
   
 Print 4th & 8th item from input and enter desired text around output
-```
-echo "Toto, I've a feeling we're not in Kansas anymore" | awk '{print "Dorthy has a " $4 " that she is not in " $8 " anymore"}'
-Result:  Dorthy has a feeling that she is not in Kansas anymore
-```
+
+    echo "Toto, I've a feeling we're not in Kansas anymore" | awk '{print "Dorthy has a " $4 " that she is not in " $8 " anymore"}'
+    Result:  Dorthy has a feeling that she is not in Kansas anymore
+
 
 Change default delimiter from space to comma with -F flag (for csv files)
-```
-echo apple,ball,cat,dog,elephant,fox,grape,hide,india | awk -F, '{print $2,$7}'
-Result:  ball grape
-```
+
+    echo apple,ball,cat,dog,elephant,fox,grape,hide,india | awk -F, '{print $2,$7}'
+    Result:  ball grape
+
