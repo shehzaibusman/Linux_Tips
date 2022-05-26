@@ -8,23 +8,23 @@ Tmux is a terminal multiplexer that can minipulate the terminal in ways to incre
 ### :smirk:	Tmux Commands
 
 Start a new session
-```
-tmux
-OR
-tmux new -s SessionName
-```
+
+    tmux
+    OR
+    tmux new -s SessionName
+
 
 List sessions
-```
-tmux ls
-```
+
+    tmux ls
+
 
 Attach to session
-```
-tmux a
-OR
-tmux a -t SessionName
-```
+
+    tmux a
+    OR
+    tmux a -t SessionName
+
 
 When inside a tmux session, use prefix ctrl+b followed by the following to navigate through tmux. 
 
@@ -105,8 +105,7 @@ tmux attach
 |-----------------------------------------|
 
 Then call it by typing:
-```
-xmux host1 host2 host3 etc.  
-```
+
+    xmux host1 host2 host3 etc.  
 <hr>
 
