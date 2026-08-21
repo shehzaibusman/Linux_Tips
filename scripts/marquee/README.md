@@ -94,13 +94,13 @@ marquee [options] "Your text here"
 
 ```bash
 # Basic usage
-marquee "ASC Defense | All systems nominal"
+marquee "All systems nominal | Uptime 99.9%"
 
 # Stop after 10 seconds
-marquee -t 10 "ASC Defense | All systems nominal"
+marquee -t 10 "All systems nominal | Uptime 99.9%"
 
 # Bold green, stop after 30 seconds
-marquee -t 30 -c green -b "ASC Defense | All systems nominal"
+marquee -t 30 -c green -b "All systems nominal | Uptime 99.9%"
 
 # Fast yellow warning banner
 marquee -s 40 -c yellow -b "WARNING: Maintenance window active 22:00–02:00 UTC"
